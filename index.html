@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>学生平台写作复盘</title>
+  <link rel="stylesheet" href="writing-review.css?v=assessment-3">
+  <script src="writing-samples.js?v=assessment-3" defer></script>
+  <script src="writing-review.js?v=assessment-3" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div><a href="https://chaoimhinalmansour.github.io/studentplatform/">学生平台</a><span>Student Platform</span></div>
+  </header>
+  <main class="page">
+    <section class="hero">
+      <p class="kicker">IELTS Academic Writing</p>
+      <h1>写作复盘</h1>
+      <p>从原文批注回看思路和表达，找出下一稿要练的地方。</p>
+    </section>
+    <nav class="sample-list" aria-label="写作复盘样例">
+      <button type="button" data-sample="task1" aria-pressed="true"><span>Task 1 图表写作</span><strong>通勤方式与通勤时间</strong></button>
+      <button type="button" data-sample="task2" aria-pressed="false"><span>Task 2 议论文</span><strong>公共交通与道路投入</strong></button>
+    </nav>
+    <article class="review" aria-labelledby="task-title">
+      <header class="task-header">
+        <div><p class="kicker" id="task-label"></p><h2 id="task-title"></h2></div>
+        <span class="sample-tag">自制样例</span>
+      </header>
+      <details id="task-material" class="material" open>
+        <summary id="material-title">题目与图表</summary>
+        <div id="task-prompt" lang="en"></div>
+        <div id="task-figures" class="figures"></div>
+      </details>
+      <div class="view-tabs" role="tablist" aria-label="复盘内容">
+        <button type="button" id="tab-source" role="tab" data-view="source" aria-selected="true" aria-controls="panel-source">原文批改</button>
+        <button type="button" id="tab-thought" role="tab" data-view="thought" aria-selected="false" aria-controls="panel-thought" tabindex="-1">思维复盘</button>
+        <button type="button" id="tab-language" role="tab" data-view="language" aria-selected="false" aria-controls="panel-language" tabindex="-1">表达讲评</button>
+        <button type="button" id="tab-summary" role="tab" data-view="summary" aria-selected="false" aria-controls="panel-summary" tabindex="-1">本次小结</button>
+      </div>
+      <section id="panel-source" role="tabpanel" aria-labelledby="tab-source"></section>
+      <section id="panel-thought" role="tabpanel" aria-labelledby="tab-thought" hidden></section>
+      <section id="panel-language" role="tabpanel" aria-labelledby="tab-language" hidden></section>
+      <section id="panel-summary" role="tabpanel" aria-labelledby="tab-summary" hidden></section>
+      <p id="review-status" class="sr-only" aria-live="polite"></p>
+      <noscript>请启用 JavaScript 以查看样稿和批注。</noscript>
+    </article>
+  </main>
+</body>
+</html>
